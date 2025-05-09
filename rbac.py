@@ -54,7 +54,7 @@ class RBAC:
         
         return False
 
-# Exemplo de uso similar ao código fornecido
+# Exemplo de uso:
 if __name__ == "__main__":
     rbac = RBAC()
     
