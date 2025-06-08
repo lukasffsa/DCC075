@@ -2,6 +2,7 @@
 
 alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
+# A função abaixo implementa a cifra de Cesar ignorando pontuação e transforamndo todas as letras em caracteres maiúsculos:
 def cifraCesar(texto, k):
     caracteres = ",.:;()-?!_"
     texto = texto.upper()
@@ -67,8 +68,11 @@ frequencias = {
     "z": 0.47
 
 }
+
+# A linha abaixo ordena o dicionário acima em ordem decrescente:
 frequencias = dict(sorted(frequencias.items(), key=lambda item: item[1], reverse=True))
 
+# Função abaixo conta a frequência das letras no texto criptografado e retorna um dicionário de frequências:
 def contadorFrequencia(texto_criptografado):
     freq_letras = {}
     for char in texto_criptografado:
@@ -81,7 +85,7 @@ def contadorFrequencia(texto_criptografado):
         freq_letras[letra] = round((freq_letras[letra] * 100) / len(texto_criptografado), 2)
     return freq_letras
 
-
+# As duas linhas abaixo ordenam o dicionário de frequência em ordem decrescente:
 freqLetrasTexto = contadorFrequencia(resultado)
 freqLetrasTexto = dict(sorted(freqLetrasTexto.items(), key=lambda item: item[1], reverse=True))
 
@@ -90,17 +94,12 @@ print("\nFrequência das letras no texto de exemplo:\n", freqLetrasTexto)
 
 print("\nResultado da criptoanálise: \n")
 
+# As duas linhas abaixo transformam os dois dicionários em listas:
 lista_freq = list(frequencias)
 lista_freq_texto = list(freqLetrasTexto)
 
+# O código abaixo compara as letras mais usadas da língua portuguesa com as mais usadas na criptografia uma a uma:
 iter = 0
 while iter < len(lista_freq_texto):
     print(lista_freq_texto[iter], "corresponde a: ", lista_freq[iter])
     iter+=1
-    
-
-
-    
-    
-    
-    
