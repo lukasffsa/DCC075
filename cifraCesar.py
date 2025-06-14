@@ -16,18 +16,24 @@ def cifraCesar(texto, k):
             texto_criptografado = texto_criptografado + alfabeto[((alfabeto.index(char) + k) % 26)]
     return texto_criptografado
 
-texto_exemplo = """Explorar o universo sempre foi um dos maiores sonhos da humanidade. 
-Desde os primeiros olhares para o ceu estrelado, nos perguntamos o que
-existe alem do nosso planeta. Com o avancar da ciencia, enviamos sondas,
-astronautas e telescopios para desvendar os misterios do cosmos. Descobrimos planetas distantes,
-buracos negros e galaxias inimaginaveis. A possibilidade de vida em outros mundos nos intriga e impulsiona 
-novas missoes espaciais. Empresas privadas comecam a investir em viagens espaciais comerciais, aproximando
-a exploracao do espaco da realidade cotidiana. O turismo espacial, antes ficcao, ja tem data marcada para acontecer.
-Marte se torna um destino possivel, e a ideia de colonizar outro planeta deixa de ser apenas teoria. 
-A tecnologia avanca em ritmo acelerado, e a cada dia chegamos mais perto do desconhecido. Mas junto com o progresso vem questionamentos eticos
-e ambientais. Estamos preparados para levar nossa civilizacao para fora da Terra? O futuro pode estar nas estrelas, mas depende de como cuidamos do presente. 
-O espaco e um convite a sonhar, mas tambem um desafio a refletir. 
-Nossa curiosidade e infinita, assim como o universo que nos cerca."""
+texto_exemplo = """OXNDV, DLGQD PH LPSUHVVLRQR FRP TXDQWR WHPSR
+OHYHL SUD SHUFHEHU TXH É YRFHÃ TXHP HX TXHUWR
+WHU SRU SHUWR R WHPSR WRGR. YRXH É TXHP PH IDV
+ULU VHP SDUDU, TXHP PH IDV IKHOCL GH YHUDGH, TXHP
+PH IDV VHQWLUD PDGDGD H HVSHFLDO. DVFK TXH RX
+UHDOPHQWH SUHFLVDYD GDTXHLOHVW GRLV DQRV.
+HOHV IRUDP HVVHQFLDLV SUD TXH D JHQWH VH
+FRQKHFHVVH GH YHUDGH, SUD TXH RX HVWLYHVVH
+SURQWD SUD UHFHEHU HVVH DPRU TXH VÓ YRFH VDEH
+GDU. H WDPEÉP SUD DPDU YRFH Q¾R VÓ FRPR DPLJR, PDV
+FRPR SDUFHLUR. PDV LVVR Q¾R É VREUR PLP. É VREUR
+YRFH, VREUR FRPR HX PH HQFDQWR FDFD GLD PDLV FRP R
+VHX MHLWR GH DPDU, FRP R VHX FXLGDGR, FRP D IRMUD
+TXH YRFH IDV SLDGD DWP HQIHUQWDQGR RV PDLRUHV
+SUREOHPDV. DV FRLVDV SDUHFHP PDLV VLPSOHV FRP
+YRFH GR PHX ODGR H, KRMH, TXDOGXH WHPSR ORQJH GH
+YRFH MD Q¾R IDV PDLV VHQWLGR. WH DPR SUD VHPSUH.
+"""
         
     
 k = int(input("\nDigite o valor de k: "))
