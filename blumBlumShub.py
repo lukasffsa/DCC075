@@ -16,7 +16,7 @@ def bbs(p, q, iters):
     while i < iters:
         x = (x**2) % m
         bits.append(x % 2)
-        print(f"iterações conclídas: {i+1}/{iters}")
+        print(f"iterações concluídas: {i+1}/{iters}")
         i+=1
     
     lsb = "".join(str(bit) for bit in bits)    
